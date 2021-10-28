@@ -41,6 +41,8 @@ siendo el resultado de la ejecución
 ![image](./ejecucion1.png)
 
 ### Se maneja la asincronía con callback (sincronizar2.js)
+La función hello(f) tiene un parámetro que representa a una función. Cuando se llama a la función hello se envia como parametro el nombre de la función que muestra el contenido de greetings, así hello(f) puede llamar a la función después de que el valor 'Buenos Dias' se haya asignado a greetings. De esta manera el algoritmo programado se ocupa de que la variable greetings esté rellena antes de ser mostrada.
+
 ~~~
 let greetings = '';
 
@@ -99,6 +101,7 @@ siendo el resultado de la ejecución
 
 ### Se maneja la asincronia con async/await (sincronizar4.js)
 Este ejemplo es igual al anterior con la diferencia de que en vez de hacer uso del método then() se hace uso las palabras clave async/await. La palabra clave await se puede usar para llamar a funciones que devuelven promesas. Es el mismo comportamiento que el método then(), hasta que la promesa no se resuelve (resove()) la secuencia de ejecución no continua. Para poder usar await es obligatorio que la función en la que se usar haya sido definida como async.
+
 ~~~
 let greetings = '';
 
